@@ -26,13 +26,14 @@
 
 use std::ops::{Bound, Index, IndexMut, RangeBounds, Sub};
 
+use bevy_reflect::Reflect;
 use glam::{IVec2, UVec2, Vec2};
 use itertools::Itertools;
 
 use crate::{geometry::GridRect, point::Size2d, GridPoint, Pivot};
 
 /// A dense sized grid that stores it's elements in a `Vec`.
-#[derive(Debug, Clone, Eq, PartialEq)]
+#[derive(Debug, Clone, Eq, PartialEq, Reflect)]
 pub struct Grid<T> {
     data: Vec<T>,
     size: UVec2,

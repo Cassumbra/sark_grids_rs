@@ -1,6 +1,7 @@
 //! Utility for handling circular shapes on a 2d grid.
 // https://www.redblobgames.com/grids/circle-drawing/
-use glam::{IVec2, Vec2};
+
+use bevy::math::{IVec2, Vec2};
 
 use crate::GridPoint;
 

@@ -4,7 +4,6 @@ mod grid_cone;
 mod grid_diamond;
 mod grid_line;
 mod grid_rect;
-use glam::IVec2;
 
 use self::grid_circle::GridCircleIter;
 use self::grid_circle::GridCircleOutlineIter;
@@ -14,6 +13,7 @@ use self::grid_line::GridLineIter;
 use self::grid_line::GridLineOrthoIter;
 use self::grid_rect::GridRectIter;
 
+use bevy::math::IVec2;
 pub use grid_circle::GridCircle;
 pub use grid_circle::GridCircleOutline;
 pub use grid_cone::GridCone;

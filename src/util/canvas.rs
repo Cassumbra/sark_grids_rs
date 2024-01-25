@@ -1,7 +1,8 @@
 //! Simple utility for drawing static images to the terminal.
 
+use bevy::math::IVec2;
+
 use crate::GridPoint;
-use glam::IVec2;
 
 pub struct Canvas {
     size: IVec2,

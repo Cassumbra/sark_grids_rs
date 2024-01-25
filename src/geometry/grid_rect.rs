@@ -4,7 +4,7 @@ use std::{
     ops::{Add, Deref, Sub},
 };
 
-use glam::{IVec2, Mat2, Vec2};
+use bevy::math::{IVec2, Mat2, Vec2};
 
 use crate::{GridPoint, Pivot};
 

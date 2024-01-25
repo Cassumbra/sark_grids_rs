@@ -1,5 +1,5 @@
 //! Traits for more easily dealing with the various types to represent 2d points/sizes
-use bevy::math::{IVec2, UVec2, Vec2};
+use glam::{IVec2, UVec2, Vec2};
 
 use crate::{
     directions::{DIR_4, DIR_8},
@@ -273,8 +273,7 @@ impl_point2d!([usize; 2]);
 
 #[cfg(test)]
 mod tests {
-
-    use bevy::math::IVec2;
+    use glam::IVec2;
 
     use crate::GridPoint;
 

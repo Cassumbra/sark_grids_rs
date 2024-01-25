@@ -1,6 +1,6 @@
 use std::ops::{Mul, Sub};
 
-use bevy::math::{IVec2, Vec2};
+use glam::{IVec2, Vec2};
 
 use crate::GridPoint;
 
